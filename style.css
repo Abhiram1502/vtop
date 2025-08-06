@@ -1,13 +1,16 @@
-
-*{
+* {
     margin: 0;
     outline: 0;
     padding: 0;
 }
-body{
-    font-family: 'Open Sans', sans-serif;
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #e9ecef !important;
+    height: 100vh !important;
 }
-.nav{
+
+.nav {
     z-index: 10;
     position: fixed;
     top: 0;
@@ -17,7 +20,8 @@ body{
     flex-direction: column;
     background: linear-gradient(130deg, rgba(36, 85, 163, 1) 23%, rgba(52, 151, 219, 1) 52%, rgba(52, 142, 219, 1) 58%, rgba(52, 131, 219, 1) 65%, rgba(40, 116, 166, 1) 74%);
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,79 +30,173 @@ body{
     padding-top: 3.85px;
     padding-bottom: 3.85px;
 }
-.sidepanel{
+
+.sidepanel {
     position: fixed;
+    padding-top: 5px;
     top: 60px;
     left: 0;
-    width: 60px;
+    width: 37px;
     height: calc(100% - 60px);
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     z-index: 0;
 }
-.profile-section{
+
+.sidepanel i {
+    margin: 7px 0px;
+    font-size: 14px;
+}
+
+.profile-section {
     display: none;
     margin-left: 5px;
     justify-content: center;
     flex-direction: column;
 }
-.profile-section.show{
+
+.profile-section.show {
     display: flex;
 }
-.quickLink{
+
+.quickLink {
     border: 0.5px solid blue;
     padding: 2px 5px;
     font-size: 15px;
     margin: 10px;
     border-radius: 3px;
     background-color: transparent;
-    color:white;
+    color: white;
     align-self: center;
 }
-.profile-section i{
+
+.profile-section i {
     color: white;
 }
-.small-image{
+
+.small-image {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: white;
     margin-right: 10px;
 }
-#profile{
+
+#profile {
     background-color: transparent;
-    border: 0.5px solid black;
+    border: 0.3px solid rgb(66, 66, 181);
     border-radius: 4px;
-    padding: 5px 3px;
+    padding: 2px 0px 2px 0px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
 }
 
-.container{
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    color: rgb(33, 37, 41);
+    vertical-align: top;
+    border: 0.5px solid #ddd;
+}
+
+th,td {
+    padding: 7px;
+    text-align: left;
+    border: 0.5px solid #ddd !important;
+    font-size: 14px;
+}
+
+td {
+    background-color: #f2dede;
+    width: 70%;
+}
+
+th {
+    width: 40%;
+    background-color: #aba6bf;
+}
+
+.content {
+    background-color: white;
+    width: 90%;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2px 20px;
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.reg-profile{
+
+.mentor-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.mentor-info{
+    background-color: #f2dede;
+    margin: 40px 20px 20px 20px;
+    display: flex;
+    width: 100%;
+}
+.mentor-img {
+    width: 30%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 20px;
+    background-color: #f2dede;
+    margin-right: 20px;
+}
+
+.mentor-img img {
+    max-width: 130px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.reg-profile {
     padding-bottom: 0px;
     cursor: pointer;
 }
-.reg-profile p{
+
+.reg-profile p {
     font-size: 14px;
     color: white;
     margin-top: 5px;
     letter-spacing: 0px;
     font-weight: 500;
 }
-.profile.show{
+
+.profile.show {
     display: flex;
     opacity: 1;
 }
-.profile{
+
+.profile {
     opacity: 0;
     display: none;
     flex-direction: column;
@@ -110,19 +208,22 @@ body{
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.profile hr{
+
+.profile hr {
     width: 100%;
     border: 0.5px solid darkblue;
     margin: 10px 0;
 }
-.profile img{
+
+.profile img {
     width: 120px;
     height: 120px;
     margin-top: 15px;
     margin-bottom: 20px;
     border-radius: 50%;
 }
-.login-history{
+
+.login-history {
     color: black;
     background-color: skyblue;
     padding: 5px 90px;
@@ -130,7 +231,8 @@ body{
     border-radius: 3px;
     margin-bottom: 1px;
 }
-.profile-section .profile .Sign-out{
+
+.profile-section .profile .Sign-out {
     color: white;
     background-color: green;
     padding: 5px 108px;
