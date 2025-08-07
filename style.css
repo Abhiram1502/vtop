@@ -125,26 +125,16 @@ th {
     background-color: #aba6bf;
 }
 
-.content {
-    background-color: white;
-    width: 90%;
-}
 
-.content h3 {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 15px;
-    font-weight: bold;
-}
 
 .main {
     display: flex;
 }
 
+#mentor-options,
 #academicsSection {
     display: none;
     position: fixed;
-    top: 200px;
     overflow: hidden;
     transition: max-height 0.4s ease;
     background-color: white;
@@ -155,21 +145,33 @@ th {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#mentor-options {
+    top: 145px;
+}
+
+#academicsSection {
+    top: 200px;
+}
+
+#mentor-options.showSlide,
 #academicsSection.showSlide {
     display: block;
     max-height: 100%;
 }
-.acedhead{
+
+.acedhead {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
     background-color: #e9ecef;
     padding: 8px;
 }
+
 .iconSpace {
     margin-right: 5px;
 }
-#academicsSection ul {
+
+ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -288,4 +290,82 @@ li {
     border-radius: 3px;
     margin-bottom: 10px;
     margin-top: 5px;
+}
+
+.mentor-page {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-page h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.timetable-page {
+    display: none;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    width: 92vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0;
+}
+.spotlight-heading {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.spotlight-content {
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.coe-badge {
+    display: inline-block;
+    background-color: #00cfff;
+    color: black;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.spotlight-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.spotlight-item i {
+    color: #c40055;
+    margin-right: 10px;
 }
